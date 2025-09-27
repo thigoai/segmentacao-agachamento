@@ -1,4 +1,5 @@
 import cv2
+import sys
 from segmentar_agachamento import segmentar_agachamento
 
 
@@ -15,5 +16,10 @@ def exibir_video(generator):
 
 
 if __name__ == "__main__":
-    generator = segmentar_agachamento("agachamento.mov")
+    if len(sys.argv) < 2:
+        print("Uso: python main.py <nome_arquivo.mov>")
+        sys.exit(1)
+
+    arquivo = sys.argv[1]
+    generator = segmentar_agachamento(arquivo)
     exibir_video(generator)
