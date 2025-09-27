@@ -22,3 +22,6 @@ venv\Scripts\activate      # Windows
 
 # Instale as dependências
 pip install -r requirements.txt
+
+#para rodar
+python main.py video.mov
