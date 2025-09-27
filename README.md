@@ -1,8 +1,8 @@
 # Segmentação de Agachamento com MediaPipe e OpenCV
 
-Este projeto detecta automaticamente as fases de **subida** e **descida** em vídeos de agachamento, utilizando **[MediaPipe]**.
+Este projeto detecta automaticamente as fases de **subida** e **descida** em vídeos de agachamento, utilizando **MediaPipe**.
 
-O sistema realiza:
+Objetivos:
 - **Segmentação de repetições** em trechos individuais salvos em `.mp4`
 - **Exportação de dados em CSV** contendo:
   - Distância entre quadril e joelho  
@@ -10,8 +10,6 @@ O sistema realiza:
   - Número da repetição e série  
 
 ---
-
-Clone o repositório e instale as dependências:
 
 ```bash
 git clone https://github.com/seu-usuario/agachamento-segmentacao.git
