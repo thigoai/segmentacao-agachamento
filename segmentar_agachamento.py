@@ -74,7 +74,7 @@ def segmentar_agachamento(video_path):
                 cor = (0,255,0) if fase == Fase.SUBIDA else (0,0,255)
                 cv2.putText(img, texto, (40, 200), cv2.FONT_HERSHEY_SIMPLEX, 2, cor, 5)
 
-            # 👉 em vez de exibir, retornamos o frame processado
+            # retornamos o frame processado
             yield img
 
             frame_num += 1
